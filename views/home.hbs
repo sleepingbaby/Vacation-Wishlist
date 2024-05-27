@@ -1,0 +1,66 @@
+{{#if logged_in}}
+<div class="top">
+<div class="header">
+      <h4>
+        Found exciting places to visition on your next vacation? Use the form
+        below to add them to your wishlist
+      </h4>
+      <a href="./userPages/login.html" class="login">Sign In</a>
+    </div>
+        <form id="destinationForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Destination Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              required="true"
+              placeholder="Enter the name of the destination"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Location</label>
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              required="true"
+              placeholder="Where is it located?"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Description</label>
+            <textarea
+              type="text"
+              class="form-control"
+              id="description"
+              placeholder="Enter a description"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark">Add to List</button>
+        </form>
+    </div>
+</div>
+    
+    
+    {{> cards}}
+
+{{else}}
+  <div class="landing-page">
+    <div class="landing-page-title">
+      <h1>Vacation Destinations Wishlist</h1>
+      <hr />
+    </div>
+
+    <div class="buttons">
+      <button type="button" id="get-started-btn" class="btn btn-primary">Get
+        Started</button>
+      <a href="/login">
+        Login
+      </a>
+    </div>
+  </div>
+  <script>document .querySelector("#get-started-btn") .addEventListener("click",
+    () => window.location.replace("/signup"));</script>
+{{/if}}

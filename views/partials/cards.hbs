@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row bottom">
+
+    {{#each destinations}}
+      <div class="col-4 d-flex">
+        <div class="card flex-fill d-flex flex-column h-100">
+          <img class="card-img-top" src={{this.image}} alt="Card image cap" />
+          <div class="card-body">
+            <h5 class="card-title">{{this.name}}</h5>
+            <h4>{{this.location}}</h4>
+            <p class="card-text">{{this.description}}</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+
+  </div>
+</div>

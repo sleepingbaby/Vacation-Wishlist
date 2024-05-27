@@ -1,0 +1,112 @@
+body {
+  height: calc(100% - 56px);
+  width: 100%;
+  background-color: #fcf8f3;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #698474;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  height: 60%;
+  width: 50%;
+  gap: 16px;
+}
+
+.landing-page-title {
+  padding: 12px;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.card-img-top {
+  max-height: 200px;
+  min-height: 150px;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: white !important ;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar {
+  padding: 8px 16px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#get-started-btn {
+  width: 70%;
+  height: 50px;
+  background-color: #ff9892;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+#get-started-btn:hover {
+  color: gray;
+  background-color: #ffaaa5;
+}
+
+#login-btn {
+  width: 50%;
+}
